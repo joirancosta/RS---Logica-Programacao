@@ -1,0 +1,12 @@
+lugar = input('Diga um lugar: ')
+pessoa = input('Diga uma pessoa: ')
+objeto = input('Diga um objeto: ')
+cor = input('Diga uma cor: ')
+verbo = input('Diga um verbo: ')
+numero = input('Diga um numero: ')
+
+print(f'Um dia comum no(a) {lugar} virou uma confusão quando {pessoa} apareceu do nada, segurando um(a) {objeto} brilhante.')
+print(f'Tudo estava indo bem até que ela pisou em um tapete {cor} e começou a {verbo} sem parar — parecia até uma dança sincronizada!')
+print('No fim, ela olhou para todos e disse:')
+print(f'“Isso me lembra da vez em que fiz isso {numero} vezes seguidas em um show!”')
+print(f'E assim nasceu a lenda do dia mais maluco no(a) {lugar}.')

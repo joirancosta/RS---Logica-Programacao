@@ -1,0 +1,15 @@
+print("Olá, pessoal!")
+print()
+print("Bem-vindo ao DETRAN")
+print()
+print("Este é o novo teste extremamente complexo para liberar a CNH")
+print()
+idade = int(input("Digite sua idade: "))
+print()
+if idade >= 18:
+    print("Pode dirigir!")
+else:
+    print("Não pode dirigir!5")
+print()
+print("Acabou!")
+input()
