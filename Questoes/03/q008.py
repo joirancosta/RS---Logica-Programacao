@@ -19,13 +19,17 @@ tentativas = 0
 
 while True:
   try:
+    if tentativas >= 5:
+      os.system("clear")
+      print('Game Over, você perdeu!')
+      mapa_tesouro[linha_tesouro][coluna_tesouro] = '🌟'
+      print("O tesouro estava aqui:")
+      exibe_mapa()
+      break
+
     print('Tente achar o tesouro no mapa!')
     print(f"Tentativa {tentativas}")
     exibe_mapa()
-
-    if tentativas >= 5:
-      print('Game Over, você perdeu!')
-      break
 
     linha = int(input('Digite a linha: '))
     coluna = int(input('Digite a coluna: '))

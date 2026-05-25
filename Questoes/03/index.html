@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desafio Prático - Primeiros programas</title><link href="style.css" rel="stylesheet"/></head><body><article id="36af3aaa-9ead-80a9-8c9f-f1902bd1383e" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💪</span></div><h1 class="page-title" dir="auto">Desafio Prático - Primeiros programas</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8075-8fc7-e278d4c04b28" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Adivinhe o número</strong></mark><mark class="highlight-default"><br/>Crie um programa que simule um truque de mágica! <br/>Peça para a pessoa pensar em um número de 1 a 10 e “adivinhe” o número no final</mark></li></ol></div><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" integrity="sha512-AKaNmg8COK0zEbjTdMHJAPJ0z6VeNqvRvH4/d5M4sHJbQQUToMBtodq4HaV4fa+WV2UTfoperElm66c9/8cKmQ==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><pre id="36af3aaa-9ead-803b-8f31-f111d4f7dd78" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Pense em um número de 1 a 10.&#x27;)
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desafio Prático - Primeiros programas</title><link href="style.css" rel="stylesheet"/></head></head><body><article id="36af3aaa-9ead-80a9-8c9f-f1902bd1383e" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💪</span></div><h1 class="page-title" dir="auto">Desafio Prático - Primeiros programas</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8075-8fc7-e278d4c04b28" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Adivinhe o número</strong></mark><mark class="highlight-default"><br/>Crie um programa que simule um truque de mágica! <br/>Peça para a pessoa pensar em um número de 1 a 10 e “adivinhe” o número no final</mark></li></ol></div><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" integrity="sha512-AKaNmg8COK0zEbjTdMHJAPJ0z6VeNqvRvH4/d5M4sHJbQQUToMBtodq4HaV4fa+WV2UTfoperElm66c9/8cKmQ==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><pre id="36af3aaa-9ead-803b-8f31-f111d4f7dd78" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Pense em um número de 1 a 10.&#x27;)
 input()
 print(&#x27;Seu número é... 8&#x27;)
 input()</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-801e-829d-fcb7a668aca8" class="numbered-list" start="2"><li><strong>Pense em uma cor</strong><br/>Peça para a pessoa pensar em uma cor e, após alguns passos, &quot;adivinhe&quot; a cor escolhida usando uma mensagem divertida!</li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-8083-8c84-df379f96bfbc" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Pense em uma cor.&#x27;)
@@ -90,12 +90,16 @@ coluna_tesouro = random.randint(0, 3)
 tentativas = 0
 while True:
   try:
+    if tentativas &gt;= 5:
+      os.system(&quot;clear&quot;)
+      print(&#x27;Game Over, você perdeu!&#x27;)
+      mapa_tesouro[linha_tesouro][coluna_tesouro] = &#x27;🌟&#x27;
+      print(&quot;O tesouro estava aqui:&quot;)
+      exibe_mapa()
+      break
     print(&#x27;Tente achar o tesouro no mapa!&#x27;)
     print(f&quot;Tentativa {tentativas}&quot;)
     exibe_mapa()
-    if tentativas &gt;= 5:
-      print(&#x27;Game Over, você perdeu!&#x27;)
-      break
     linha = int(input(&#x27;Digite a linha: &#x27;))
     coluna = int(input(&#x27;Digite a coluna: &#x27;))
     if mapa_tesouro[linha][coluna] == &#x27;X&#x27;:
