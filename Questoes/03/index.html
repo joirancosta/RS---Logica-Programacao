@@ -1,0 +1,125 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Desafio Prático - Primeiros programas</title><link href="style.css" rel="stylesheet"/></head><body><article id="36af3aaa-9ead-80a9-8c9f-f1902bd1383e" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💪</span></div><h1 class="page-title" dir="auto">Desafio Prático - Primeiros programas</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8075-8fc7-e278d4c04b28" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>Adivinhe o número</strong></mark><mark class="highlight-default"><br/>Crie um programa que simule um truque de mágica! <br/>Peça para a pessoa pensar em um número de 1 a 10 e “adivinhe” o número no final</mark></li></ol></div><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js" integrity="sha512-AKaNmg8COK0zEbjTdMHJAPJ0z6VeNqvRvH4/d5M4sHJbQQUToMBtodq4HaV4fa+WV2UTfoperElm66c9/8cKmQ==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><pre id="36af3aaa-9ead-803b-8f31-f111d4f7dd78" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Pense em um número de 1 a 10.&#x27;)
+input()
+print(&#x27;Seu número é... 8&#x27;)
+input()</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-801e-829d-fcb7a668aca8" class="numbered-list" start="2"><li><strong>Pense em uma cor</strong><br/>Peça para a pessoa pensar em uma cor e, após alguns passos, &quot;adivinhe&quot; a cor escolhida usando uma mensagem divertida!</li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-8083-8c84-df379f96bfbc" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Pense em uma cor.&#x27;)
+input(&#x27;Pronto? Aperte Enter&#x27;)
+print(&#x27;Sua cor é... verde&#x27;)
+input()</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-80cb-8f90-dec39fd65434" class="numbered-list" start="3"><li><mark class="highlight-default"><strong>Criando uma histórica maluca</strong></mark><mark class="highlight-default"><br/>Crie um programa que peça ao usuário 6 palavras (ex: lugar, pessoa famosa, objeto, cor, verbo, número) e monte uma pequena historinha engraçada com elas.</mark></li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-80b6-a7b0-d1cb821ab518" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">lugar = input(&#x27;Diga um lugar: &#x27;)
+pessoa = input(&#x27;Diga uma pessoa: &#x27;)
+objeto = input(&#x27;Diga um objeto: &#x27;)
+cor = input(&#x27;Diga uma cor: &#x27;)
+verbo = input(&#x27;Diga um verbo: &#x27;)
+numero = input(&#x27;Diga um numero: &#x27;)
+print(f&#x27;Um dia comum no(a) {lugar} virou uma confusão quando {pessoa} apareceu do nada, segurando um(a) {objeto} brilhante.&#x27;)
+print(f&#x27;Tudo estava indo bem até que ela pisou em um tapete {cor} e começou a {verbo} sem parar — parecia até uma dança sincronizada!&#x27;)
+print(&#x27;No fim, ela olhou para todos e disse:&#x27;)
+print(f&#x27;“Isso me lembra da vez em que fiz isso {numero} vezes seguidas em um show!”&#x27;)
+print(f&#x27;E assim nasceu a lenda do dia mais maluco no(a) {lugar}.&#x27;)</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8021-b030-f8bb6ca0e1f2" class="numbered-list" start="4"><li><mark class="highlight-default"><strong>Meu crachá de programador(a)</strong></mark><mark class="highlight-default"><br/>Peça o nome, idade, linguagem favorita e um emoji que representa a pessoa. <br/>Depois, mostre tudo formatado como se fosse um crachá de evento tech.</mark></li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-801e-8896-f8b35c325982" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">nome = input(&#x27;Diga seu nome: &#x27;)
+idade = input(&#x27;Diga sua idade: &#x27;)
+linguagem_favorita = input(&#x27;Diga sua linguagem favorita: &#x27;)
+emoji = input(&#x27;Informe um emoji: &#x27;)
+print(&#x27;&#x27; * 15)
+print()
+print(f&#x27;👩‍💻 Crachá do Dev&#x27;)
+print()
+print(f&#x27;Nome: {nome}&#x27;)
+print(f&#x27;Idade: {idade}&#x27;)
+print(f&#x27;Linguagem favorita: {linguagem_favorita}&#x27;)
+print(f&#x27;Emoji: {emoji}&#x27;)
+print(&#x27;&#x27; * 15)</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-802b-b844-ea01bf7aea43" class="numbered-list" start="5"><li><strong>Oráculo da sabedoria Python</strong><br/>Neste exercício, você vai criar um assistente que responde perguntas de programação!</li></ol></div><div style="display:contents" dir="auto"><pre id="36bf3aaa-9ead-80d7-95f2-e511881c0ee1" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">print(&#x27;Vamos falar sobre programação!&#x27;)
+print(&#x27;Escolha um assunto abaixo:&#x27;)
+print(&#x27;-&gt; JAVA&#x27;)
+print(&#x27;-&gt; HTML&#x27;)
+print(&#x27;-&gt; CSS&#x27;)
+print(&#x27;-&gt; JAVASCRIPT&#x27;)
+print(&#x27;-&gt; TYPESCRIPT&#x27;)
+print(&#x27;-&gt; C#&#x27;)
+resposta = input(&#x27;Escolha uma assunto de programação: &#x27;)
+resposta = resposta.lower()
+match resposta:
+		case &#x27;java&#x27;:
+				print(&#x27;Linguagem orientada a objetos muito usada em sistemas corporativos, aplicativos Android (tradicionalmente) e back-end. Conhecida pela portabilidade (“escreva uma vez, execute em qualquer lugar”).&#x27;)
+		case &#x27;html&#x27;:
+				print(&#x27;Não é uma linguagem de programação, e sim uma linguagem de marcação usada para estruturar páginas web (títulos, textos, imagens, formulários etc.).&#x27;)
+		case &#x27;css&#x27;:
+				print(&#x27;Também não é linguagem de programação. Serve para estilizar páginas HTML: cores, fontes, espaçamento, animações e layout.&#x27;)
+		case &#x27;python&#x27;:
+				print(&#x27;Linguagem de sintaxe simples, usada em automação, análise de dados, inteligência artificial, desenvolvimento web e scripts.&#x27;)
+		case &#x27;c#&#x27;:
+				print(&#x27;Criada pela Microsoft. Muito usada em desenvolvimento de sistemas, APIs, aplicações Windows e jogos com Unity.&#x27;)
+		case &#x27;javascript&#x27;:
+				print(&#x27;Linguagem principal da interatividade na web. Faz botões funcionarem, atualiza páginas sem recarregar e também é usada no back-end.&#x27;)
+		case &#x27;typescript&#x27;:
+				print(&#x27;Extensão do JavaScript com tipagem estática. Ajuda a evitar erros em projetos grandes e é bastante usada em aplicações modernas.&#x27;)
+		case _:
+			print(&#x27;Ainda estou aprendendo&#x27;)</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8085-be4f-ea9306fdb81c" class="numbered-list" start="6"><li><mark class="highlight-default"><strong>Quiz de perguntas e respostas<br/></strong></mark><mark class="highlight-default">Crie um jogo de perguntas com pontuação.</mark></li></ol></div><div style="display:contents" dir="auto"><pre id="d8c37883-9448-4bf3-bb51-3bb15674e74d" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">questoes = [
+	[&#x27;Quanto é 5 + 8?&#x27;, 5 + 8],
+	[&#x27;Quanto é 10 - 7?&#x27;, 10 - 7],
+	[&#x27;Quanto é 9 * 3?&#x27;, 9 * 3],
+	[&#x27;Quanto é 81 / 9?&#x27;, 81 / 9],
+	[&#x27;Quanto é (2 + 2) / 2?&#x27;, (2 + 2) / 2],
+	[&#x27;Quanto é (56 - 46) / (5 * 2)?&#x27;, (56 - 46) / (5 * 2)],
+]
+pontos = 0
+for questao in questoes:
+	resposta = int(input(f&quot;{questao[0]} &quot;))
+	if resposta == questao[1]:
+		pontos += 1
+
+print(f&quot;Pontuação: {pontos}&quot;)</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-806f-a7e5-ff58f64c7efb" class="numbered-list" start="7"><li><mark class="highlight-default"><strong>Número secreto<br/></strong></mark><mark class="highlight-default">Escolha um número fixo e peça para o usuário tentar adivinhar até acertar (de verdade).</mark></li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-805f-89bc-d1da8a17cc12" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">numero_certo = 44
+tentativas = 1
+while True:
+		chute = int(input(&#x27;Adivinhe um número de 1 a 50: &#x27;))
+		if chute == numero_certo:
+				break
+		tentativas += 1
+print(f&#x27;Parabens, acertou o número em {tentativas} tentativas&#x27;)</code></pre></div><div style="display:contents" dir="auto"><ol type="1" id="36af3aaa-9ead-8020-9911-c65bfac51e24" class="numbered-list" start="8"><li><strong>Caça ao tesouro espacial</strong><br/>Um tesouro está escondido em um planeta misterioso. Ele está em alguma linha e coluna de um mapa 4x4. Você tem 5 chances para tentar adivinhar onde ele está!</li></ol></div><div style="display:contents" dir="auto"><pre id="36af3aaa-9ead-8000-b476-c6cee6ef1cb5" class="code code-wrap"><code class="language-python" style="white-space:pre-wrap;word-break:break-all">import random
+import os
+def exibe_mapa():
+  for linha in mapa_tesouro:
+    print(&#x27;|&#x27;.join(linha))
+    print(&#x27;-&#x27; * 7)
+mapa_tesouro = [
+  [&#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;],
+  [&#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;],
+  [&#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;],
+  [&#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;, &#x27; &#x27;],
+]
+linha_tesouro = random.randint(0, 3)
+coluna_tesouro = random.randint(0, 3)
+tentativas = 0
+while True:
+  try:
+    print(&#x27;Tente achar o tesouro no mapa!&#x27;)
+    print(f&quot;Tentativa {tentativas}&quot;)
+    exibe_mapa()
+    if tentativas &gt;= 5:
+      print(&#x27;Game Over, você perdeu!&#x27;)
+      break
+    linha = int(input(&#x27;Digite a linha: &#x27;))
+    coluna = int(input(&#x27;Digite a coluna: &#x27;))
+    if mapa_tesouro[linha][coluna] == &#x27;X&#x27;:
+      print(&#x27;Posição já jogada!&#x27;)
+      continue
+    elif (
+        mapa_tesouro[linha][coluna] != &#x27; &#x27; or 
+        not 0 &lt;= linha &lt;= 3 or 
+        not 0 &lt;= coluna &lt;= 3
+      ):
+      print(&#x27;Jogada inválida!&#x27;)
+      continue
+    elif linha == linha_tesouro and coluna == coluna_tesouro:
+      os.system(&quot;clear&quot;)
+      print(&#x27;Parabéns, você venceu! Achou o tesouro!&#x27;)
+      mapa_tesouro[linha][coluna] = &#x27;🌟&#x27;
+      exibe_mapa()
+      break
+    else:
+      mapa_tesouro[linha][coluna] = &#x27;X&#x27;
+      tentativas += 1
+    os.system(&quot;clear&quot;)
+  except ValueError:
+    print(&#x27;Digite valores númericos entre 0 e 2.&#x27;)
+  except IndexError:
+    print(&#x27;Digite valores númericos entre 0 e 2.&#x27;)
+</code></pre></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
